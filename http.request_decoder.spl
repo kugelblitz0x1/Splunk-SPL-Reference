@@ -1,0 +1,2 @@
+| eval http.request=urldecode(http.request)
+| rex mode=sed field=http.request "s/\Wr\Wn/\n/g"
