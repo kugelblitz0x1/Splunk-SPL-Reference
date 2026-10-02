@@ -1,0 +1,5 @@
+| rex mode=sed field=http.uri "s/\s/%20/g"
+| rex mode=sed field=http.uri "s/:/%3a/g"
+| rex mode=sed field=http.uri "s/,/%2c/g"
+| rex mode=sed field=http.uri "s/\\\/%5c/g"
+| rex mode=sed field=http.uri "s/\n/%5cn/g"
