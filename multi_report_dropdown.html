@@ -1,0 +1,46 @@
+<form>
+  <fieldset submitButton="false" autoRun="false"></fieldset>
+  <row>
+    <panel>
+      <title>Option 2 - Display Only Selected Panel. Run search only for Selected Panel.</title>
+      <input type="dropdown" token="tokSearchOption2" searchWhenChanged="true">
+        <label>Select Search</label>
+        <choice value="A">Search A</choice>
+        <choice value="B">Search B</choice>
+        <default>A</default>
+        <change>
+          <condition value="A">
+            <set token="tokSearchA">true</set>
+            <unset token="tokSearchB"></unset>
+          </condition>
+          <condition value="B">
+            <unset token="tokSearchA"></unset>
+            <set token="tokSearchB">true</set>
+          </condition>
+        </change>
+      </input>
+    </panel>
+  </row>
+  <row>
+    <panel depends="$tokSearchA$">
+      <title>Panel A</title>
+      <chart>
+        <search>
+          <query>| makeresults
+          | eval sampleDataA="A"
+          | table sampleDataA</query>
+        </search>
+      </chart>
+    </panel>
+    <panel depends="$tokSearchB$">
+      <title>Panel B</title>
+      <chart>
+        <search>
+          <query>| makeresults
+          | eval sampleDataB="B"
+          | table sampleDataB</query>
+        </search>
+      </chart>
+    </panel>
+  </row>
+</form>
