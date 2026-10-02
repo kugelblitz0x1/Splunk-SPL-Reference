@@ -1,0 +1,7 @@
+index=index sourcetype=sourcetype
+"CRITERIA"
+earliest=-24h
+[ search "CRITERIA"
+| table FIELD1 FIELD2 FIELD3
+| format
+| return $search ]
