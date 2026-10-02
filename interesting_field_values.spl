@@ -1,0 +1,21 @@
+index=sandbox
+earliest=-30d
+| fieldsummary
+| rex max_match=0 field=values "\"value\"\:\"(?<fValue>.[^\"]+\"\,\"count\"\:\d+)"
+| stats count by field fValue
+| rex mode=sed field=fValue "s/\"\,\"count\"//g"
+| rex field=fValue "\:(?<fCount>\d+$)"
+| rex mode=sed field=fValue "s/\:\d+$//g"
+| eventstats avg(fCount) as avgFCount, by field
+| eval fRatio=round((fCount/avgFCount), 2)
+| eventstats max(fRatio) as maxRatio, by field
+| sort 0 - maxRatio field - fCount
+| fields field fCount fRatio fValue
+| fields - count
+| eval weight=fRatio*fCount
+| eventstats max(weight) as maxWeight, by field
+| sort maxWeight field - fCount
+| foreach fValue [eval <<FIELD>>=fCount+" "+<<FIELD>>]
+| stats dc(fValue) as dcValues, list(fValue) as fValue, by field maxWeight
+| eval fValue=mvindex(fValue, 0, 9)
+| sort - maxWeight | fields - maxWeight
