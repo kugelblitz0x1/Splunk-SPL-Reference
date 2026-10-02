@@ -1,0 +1,259 @@
+/* CSS REVISION 2.13 */
+
+/* BACKGROUND COLORS */
+
+.dashboard-dashboardpage {
+    background: #171D21 !IMPORTANT;
+}
+.dashboard-body {
+    background: #171D21 !IMPORTANT;
+}
+
+/* MAXIMIZE IT! - Leave this in to thiccen than boi up! */
+.view-mode {
+    border: 3px solid gray !IMPORTANT;
+    margin-top: 22px !IMPORTANT;
+    margin-bottom: 5px !IMPORTANT;
+    margin-left: 0px !IMPORTANT;
+    margin-right: 0px !IMPORTANT;
+    padding-top: 10px !IMPORTANT;
+    padding-bottom: 15px !IMPORTANT;
+    padding-left: 20px !IMPORTANT;
+    padding-right: 20px !IMPORTANT;
+    background: #31373E !IMPORTANT;
+}
+
+/* MINI-SIZE IT! - Comment this out to mini-size your dash! bada-bing!
+.view-mode {
+    border: 3px solid gray !IMPORTANT;
+    margin-top: 75px !IMPORTANT;
+    margin-bottom: 5px !IMPORTANT;
+    margin-left: 150px !IMPORTANT;
+    margin-right: 150px !IMPORTANT;
+    padding-top: 10px !IMPORTANT;
+    padding-bottom: 15px !IMPORTANT;
+    padding-left: 20px !IMPORTANT;
+    padding-right: 20px !IMPORTANT;
+    background: #31373E !IMPORTANT;
+}
+*/
+
+/* SPLUNK ENTERPRISE TITLE - GREATER-THAN SIGN */
+.greaterRegistered---pages-dark---7-3-1---2rG5y {
+    color: #FED300 !IMPORTANT;
+}
+
+/* SPLUNK ENTERPRISE TITLE - ENTERPRISE */
+.enterprise---pages-dark---7-3-1---1ZR4M {
+    color: #FED300 !IMPORTANT;
+}
+
+/* APP HEADER UNDERLINE ACCENT */
+.underline---pages-dark---7-3-1---bxeh0 {
+    background: #FED300 !IMPORTANT;
+}
+
+/* TABLE BODY - STRINGS */
+td.string {
+    color: #FFFFFF !IMPORTANT;
+    font-family: Splunk Platform Sans,Proxima Nova,Roboto,Droid,Helvetica Neue,Helvetica,Arial,sans-serif !IMPORTANT;
+    font-weight: 300;
+}
+td.string.highlighted {
+    color: #FED300 !IMPORTANT;
+}
+
+/* TABLE BODY - DIGITS */
+td.numeric {
+    color: #FFFFFF !IMPORTANT;
+    font-family: Splunk Platform Sans,Proxima Nova,Roboto,Droid,Helvetica Neue,Helvetica,Arial,sans-serif !IMPORTANT;
+    font-weight: 300;
+}
+td.numeric.highlighted {
+    color: #FED300 !IMPORTANT;
+}
+
+/* TABLE BODY - TIMESTAMPS */
+td.timestamp {
+    color: #FFFFFF !IMPORTANT;
+    font-family: Splunk Platform Sans,Proxima Nova,Roboto,Droid,Helvetica Neue,Helvetica,Arial,sans-serif !IMPORTANT;
+    font-weight: 300;
+}
+td.timestamp.highlighted {
+    color: #FED300 !IMPORTANT;
+}
+
+/* TABLE DRILLDOWN */
+.multivalue-subcell {
+    color: #FFFFFF !IMPORTANT;
+}
+.multivalue-subcell:hover {
+    color: #FED300 !IMPORTANT;
+}
+
+/* INPUT BOX TITLES */
+label {
+    color: #FED300;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* INPUT BOX BORDERS */
+.fBxcMV {
+    border: 2px solid #FED300 !IMPORTANT;
+}
+
+/* TIME DROP-DOWN - BORDER */
+.eFJeQZ {
+    border: 2px solid #FED300 !IMPORTANT;
+}
+
+/* TIME DROP-DOWN - FONT COLOR*/
+.LinkStyles__StyledClickable-khfycc-0 {
+    color: #FED300;
+}
+
+/* TIME DROP-DOWN - HIDE BORDERS */
+.ClickableStyles__StyledA-diczrs-0-button {
+    border: 0px;
+}
+
+/* DROP-DOWN CHECKMARK */
+.kMpYDM {
+    color: #FED300;
+}
+
+/* CUSTOM CLASSES - TEXT INPUTS AND DROP-DOWNS */
+#alertkey {
+    width: 275px;
+}
+#workitem {
+    width: 275px;
+}
+#timeinhours {
+    width: 100px;
+}
+#timeindays {
+    width: 100px;
+}
+#superwide {
+    width: 710px !IMPORTANT;
+}
+#superwide div[data-component="splunk-core:/splunkjs/mvc/components/Dropdown"] {
+    width: 710px !IMPORTANT;
+}
+.iframe {
+    border: 4px solid #FED300 !IMPORTANT;
+}
+div.facet-label {
+    color: #FED300 !IMPORTANT;
+    font-size: 16px !IMPORTANT;
+}
+#row_left {
+    width: 15% !IMPORTANT;
+}
+#row_right {
+    width: 15% !IMPORTANT;
+}
+#row_middle {
+    width: 70% !IMPORTANT;
+}
+
+/* CHANGE TEXT INPUT FONT - REGEX USE-CASE */
+.TextStyles__StyledInputInput-sc-148yeee-1.fBxcMV {
+    font-size: 14px;
+    font-family: "Splunk Platform Mono", Inconsolata, Consolas, "Droid Sans Mono", Monaco, "Courier New", Courier, monospace !IMPORTANT;
+}
+
+/* SUBMIT BUTTON */
+.btn-primary {
+    color: #FFFFFF !IMPORANT;
+    font-weight: 1000;
+    background-color: #FED300 !IMPORTANT;
+    border: 1px solid #000000 !IMPORTANT;
+}
+
+/* DIV - GRAY BORDER */
+.dashboard-row .dashboard-panel {
+    border: 3px solid gray;
+}
+
+/* TITLE TEXT AND BORDER */
+.wrapper {
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    border: 4px solid #FED300;
+}
+.aligner {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 38px;
+    color: #FED300 !IMPORTANT;
+    font-weight: 600;
+}
+
+/* PANEL TITLE - LARGEST TEXT */
+h2.panel-title {
+    color: #FED300;
+    font-weight: 600 !IMPORTANT;
+    font-size: 18px !IMPORTANT;
+}
+
+/* TABLE FIELD TITLES */
+a {
+    color: #FFFFFF !IMPORTANT;
+    font-weight: 600;
+}
+a:hover {
+    color: #FED300 !IMPORTANT;
+}
+
+/* SHOW AND HIDE GLOBAL FILTERS */
+a.hide-global-filters {
+    color: #FED300 !IMPORTANT;
+    font-weight: 600;
+}
+a.show-global-filters {
+    color: #FED300 !IMPORTANT;
+    font-weight: 600;
+}
+
+/* LOADING BAR */
+.progress-animation {
+    height: 5px;
+    background-color: #FED300 !IMPORTANT;
+}
+.progress-cursor {
+    height: 0px;
+}
+
+/* NOTIFICATION - SPLUNK IS WAITING FOR INPUT */
+.alert.alert-info {
+    color: #FED300 !IMPORTANT;
+    font-weight: 500;
+}
+
+/* HIDE SCROLL BAR */
+html {
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* FOOTER - POWERED BY BERDERS*/
+.divleft {
+    float: left;
+    color: #999999 !IMPORTANT;
+    font-size: 11px;
+    font-weight: 600;
+}
+.divright {
+    float: right;
+    color: #999999 !IMPORTANT;
+    font-size: 11px;
+    font-weight: 600;
+}
